@@ -1,0 +1,410 @@
+* { font-family: 'Libre Franklin', sans-serif; }
+
+nav { background: radial-gradient(ellipse at center, #2d2c35 0%,#1d1d26 100%) !important; }
+
+.card {
+    margin: 30px;
+    width: calc(33.33% - 60px);
+    border: 1px solid #73685b;
+    background: #201f2f;
+}
+
+.nav-link { 
+    margin: 5px 25px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dropdown {
+    margin-left: 134px;
+}
+
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0px -7px 16px 14px rgba(0, 0, 0, .5);
+}
+
+.navbar-nav { margin: auto; }
+
+.card { padding: 3px !important; }
+
+h1 {
+    
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    width: 800px;
+}
+
+#game_listings {
+    background: rgba(22,21,37,.86);
+    margin-top: 79px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.navbar-brand {
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    height: 56px;
+}
+
+#logo_separator, #arcade_title {
+    float: left;
+    color: #fff;
+}
+
+.game-card-buttons {
+    background: #191821;
+    width: calc(100% + 38px);
+    height: 30px;
+    margin-left: -19px;
+    padding: 0 19px;
+}
+
+.icons {
+    float: right;
+    margin-top: 4px
+}
+
+.card-body {
+    padding-top: 12px;
+}
+
+#spryos_logo {
+    display: block;
+    margin: auto;
+}
+
+#page_title {
+    margin-top: 0;
+    margin: auto;
+    padding: 23px 0;
+}
+
+
+#arcade_title {
+    font-size: 14px;
+}
+
+#logo_separator {
+    border-right: 1px solid #444445;
+    width: 0px;
+    height: 50px;
+    margin-right: 13px;
+    transform: rotate(30deg);
+    display: inline-block;
+}
+
+#arcade_title span {
+    font-weight: 700;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.game-box {
+    position: relative;
+}
+
+.game-box img {
+    position: relative;
+    z-index: 1;
+}
+
+.active-game {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: #647f12;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 14px;
+    z-index: 3;
+    border-radius: 6px;
+}
+
+.score {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    color: #fff;
+    padding: 5px 24px;
+    font-size: 13px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.play-button {
+    margin-top: -3px;
+    float: left;
+    padding: 7px 36px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.dropdown button {
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    padding: 8px 26px;
+}
+
+
+.details-icon, .leaderboard-icon {
+    margin: 0 5px 0;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.details-icon {
+    margin-top: 1px;
+}
+
+.custom-tooltip {
+    opacity: 0;
+    display: none;
+    background: #fff;
+    bottom: 33px;
+    width: 176px;
+    padding: 4px 9px;
+    color: #000;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 100;
+    font-size: 13px;
+}
+
+.custom-tooltip:after {
+    content:'';
+    position:absolute;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    z-index: 20;
+    bottom: -5px;
+    left: 18px;
+    transform:rotate(45deg);
+}
+
+.active-game:hover .custom-tooltip, .details-icon:hover .custom-tooltip, .leaderboard-icon:hover .custom-tooltip {
+    opacity: 1;
+    display: block;
+}
+
+.active-game .custom-tooltip {
+    width: 161px;
+}
+
+.details-icon .custom-tooltip {
+    width: 93px;
+    left: -15px;
+}
+
+.leaderboard-icon .custom-tooltip {
+    width: 131px;
+    left: -14px;
+}
+
+
+/*****************************************************************************************************************************************/
+/*** THEMES ******************************************************************************************************************************/
+/*****************************************************************************************************************************************/
+
+/*** Theme 1 ****************************************/
+
+.theme-1, .theme-1 body {
+    background: url(../images/theme1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.theme-2, .theme-2 body {
+    background: url(../images/theme2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+/*****************************************************************************************************************************************/
+/** COLOR SCHEMES ************************************************************************************************************************/
+/*****************************************************************************************************************************************/
+
+/*** ORANGE **************************************/
+
+.orange .details-icon {
+    background: url(../images/details_icon_orange.png) center no-repeat;
+    background-size: 100%;
+}
+
+.orange .leaderboard-icon {
+    background: url(../images/leaderboard_icon_orange.png) center no-repeat;
+    background-size: 100%;
+}
+
+.orange .play-button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.orange .dropdown button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.orange .active {
+    color: #eca514 !important;
+}
+
+.orange #page_title {
+    background: url(../images/title_bg_orange.png) top center no-repeat;
+}
+
+/*** GREEN **************************************/
+
+.green .details-icon {
+    background: url(../images/details_icon_green.png) center no-repeat;
+    background-size: 100%;
+}
+
+.green .leaderboard-icon {
+    background: url(../images/leaderboard_icon_green.png) center no-repeat;
+    background-size: 100%;
+}
+
+.green .play-button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.green .dropdown button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.green .active {
+    color: #eca514 !important;
+}
+
+.green #page_title {
+    background: url(../images/title_bg_green.png) top center no-repeat;
+}
+
+/*** BLUE **************************************/
+
+.blue .details-icon {
+    background: url(../images/details_icon_blue.png) center no-repeat;
+    background-size: 100%;
+}
+
+.blue .leaderboard-icon {
+    background: url(../images/leaderboard_icon_blue.png) center no-repeat;
+    background-size: 100%;
+}
+
+
+.blue .play-button {
+    background: linear-gradient(to bottom, #25daf7 0%, #0780b4 100%);
+}
+
+.blue .dropdown button {
+    background: linear-gradient(to bottom, #25daf7 0%, #0780b4 100%);
+}
+
+.blue .active {
+    color: #32f3fc !important;
+}
+
+.blue #page_title {
+    background: url(../images/title_bg_blue.png) top center no-repeat;
+}
+
+/*** PINK **************************************/
+
+.pink .details-icon {
+    background: url(../images/details_icon_pink.png) center no-repeat;
+    background-size: 100%;
+}
+
+.pink .leaderboard-icon {
+    background: url(../images/leaderboard_icon_pink.png) center no-repeat;
+    background-size: 100%;
+}
+
+.pink .play-button {
+    background: linear-gradient(to bottom, #fa2ce4 0%, #9d056c 100%);
+}
+
+.pink .dropdown button {
+    background: linear-gradient(to bottom, #fa2ce4 0%, #9d056c 100%);
+}
+
+.pink .active {
+    color: #ff7bcf !important;
+}
+
+.pink #page_title {
+    background: url(../images/title_bg_pink.png) top center no-repeat;
+}
+
+/*** RED **************************************/
+
+.red .details-icon {
+    background: url(../images/details_icon_red.png) center no-repeat;
+    background-size: 100%;
+}
+
+.red .leaderboard-icon {
+    background: url(../images/leaderboard_icon_red.png) center no-repeat;
+    background-size: 100%;
+}
+
+.red .play-button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.red .dropdown button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.red .active {
+    color: #eca514 !important;
+}
+
+.red #page_title {
+    background: url(../images/title_bg_red.png) top center no-repeat;
+}
+
+/*** PURPLE **************************************/
+
+.purple .details-icon {
+    background: url(../images/details_icon_purple.png) center no-repeat;
+    background-size: 100%;
+}
+
+.purple .leaderboard-icon {
+    background: url(../images/leaderboard_icon_purple.png) center no-repeat;
+    background-size: 100%;
+}
+
+.purple .play-button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.purple .dropdown button {
+    background: linear-gradient(to bottom, #f2ab1a 0%,#e19907 100%);
+}
+
+.purple .active {
+    color: #eca514 !important;
+}
+
+.purple #page_title {
+    background: url(../images/title_bg_red.png) top center no-repeat;
+}
