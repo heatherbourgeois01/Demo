@@ -9,6 +9,11 @@ nav { background: radial-gradient(ellipse at center, #2d2c35 0%,#1d1d26 100%) !i
     background: #201f2f;
 }
 
+#details .card {
+    width: calc(100% - 60px);
+    padding: 30px !important;
+}
+
 .nav-link { 
     margin: 5px 25px;
     font-weight: 400;
@@ -114,6 +119,11 @@ h2 {
     position: relative;
 }
 
+#details .game-box {
+    
+    width: 47%;
+}
+
 .game-box img {
     position: relative;
     z-index: 1;
@@ -140,6 +150,78 @@ h2 {
     font-size: 13px;
     left: 0;
     background: rgba(0, 0, 0, 0.50);
+}
+
+#details .active-game {
+   top: 11px;
+   right: 22px;
+
+}
+
+#details .leaderboard-icon {
+    float: right;
+}
+
+#details h3 {
+    float: left;
+}
+
+#details .play-button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    float: none;
+    width: 160px;
+}
+
+#details .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.game-details {
+    flex-direction: row;
+    color: #fff;
+    width: calc(47% - 30px);
+    float: right;
+    padding-left: 30px;
+}
+
+.game-tab {
+    border: 1px solid #4b4640;
+    padding: 25px;
+    display: none;
+    font-size: 16px !important;
+}
+
+.tab-name {
+    border: 1px solid #73685b;
+    display: inline-block;
+    border-bottom: none;
+    font-size: 14px;
+    padding: 5px 32px;
+    margin: 20px 0 0;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    border: 1px solid #73685b;
+    width: 50%;
+    padding: 5px 20px;
+
+}
+
+.active-tab {
+    background: gray;
+}
+
+.active-box {
+    display: block;
 }
 
 .play-button {
